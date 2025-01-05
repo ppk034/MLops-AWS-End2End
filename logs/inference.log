@@ -1,0 +1,89 @@
+2024-12-26 03:56:08,987 - INFO - Inference Script Started
+2024-12-26 03:56:09,529 - INFO - Model loaded successfully from ../models/trained_model.pkl
+2024-12-26 03:56:09,529 - INFO - Encoders loaded successfully from ../models/encoders.pkl
+2024-12-26 03:56:09,529 - INFO - New data loaded successfully. Shape: (26, 19)
+2024-12-26 03:56:09,529 - INFO - Encoding column: opponent
+2024-12-26 03:56:09,544 - INFO - Data preprocessed successfully for inference.
+2024-12-26 03:56:09,544 - ERROR - Error during prediction: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- opponent
+
+2024-12-26 03:56:09,544 - ERROR - Inference Script Failed: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- opponent
+
+2024-12-26 03:56:50,247 - INFO - Inference Script Started
+2024-12-26 03:56:50,766 - INFO - Model loaded successfully from ../models/trained_model.pkl
+2024-12-26 03:56:50,766 - INFO - Encoders loaded successfully from ../models/encoders.pkl
+2024-12-26 03:56:50,766 - INFO - New data loaded successfully. Shape: (26, 19)
+2024-12-26 03:56:50,766 - INFO - Encoding column: opponent
+2024-12-26 03:56:50,782 - INFO - Data preprocessed successfully for inference.
+2024-12-26 03:56:50,782 - ERROR - Error during prediction: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- opponent
+
+2024-12-26 03:56:50,782 - ERROR - Inference Script Failed: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- opponent
+
+2024-12-26 03:57:24,230 - INFO - Inference Script Started
+2024-12-26 03:57:24,826 - INFO - Model loaded successfully from ../models/trained_model.pkl
+2024-12-26 03:57:24,826 - INFO - Encoders loaded successfully from ../models/encoders.pkl
+2024-12-26 03:57:24,826 - INFO - New data loaded successfully. Shape: (26, 19)
+2024-12-26 03:57:24,826 - INFO - Encoding column: opponent
+2024-12-26 03:57:24,826 - INFO - Data preprocessed successfully for inference.
+2024-12-26 03:57:24,826 - ERROR - Error during prediction: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- opponent
+
+2024-12-26 03:57:24,826 - ERROR - Inference Script Failed: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- opponent
+
+2024-12-26 03:59:27,694 - INFO - Inference Script Started
+2024-12-26 03:59:27,694 - INFO - Loading model and encoders...
+2024-12-26 03:59:28,239 - INFO - Model and encoders loaded successfully.
+2024-12-26 03:59:28,255 - INFO - New data loaded successfully. Shape: (26, 19)
+2024-12-26 03:59:28,255 - INFO - Starting data preprocessing...
+2024-12-26 03:59:28,255 - INFO - Encoding column: opponent
+2024-12-26 03:59:28,255 - INFO - Data preprocessing completed.
+2024-12-26 03:59:28,255 - ERROR - Script failed: Mismatch between model features (18) and input data columns (17).
+2024-12-26 04:04:48,282 - INFO - Inference Script Started
+2024-12-26 04:04:48,282 - INFO - Loading model, encoders, and feature columns...
+2024-12-26 04:04:48,879 - INFO - Model, encoders, and feature columns loaded successfully.
+2024-12-26 04:04:48,879 - INFO - New data loaded successfully. Shape: (26, 19)
+2024-12-26 04:04:48,879 - INFO - Starting data preprocessing...
+2024-12-26 04:04:48,879 - INFO - Encoding column: opponent
+2024-12-26 04:04:48,879 - INFO - Data preprocessing completed.
+2024-12-26 04:04:48,895 - INFO - Validating data for prediction...
+2024-12-26 04:04:48,895 - INFO - Predictions completed successfully.
+2024-12-26 04:04:48,895 - INFO - Predictions saved to ../data/predictions.csv
+2024-12-26 05:34:46,009 - INFO - Inference Script Started
+2024-12-26 05:34:46,010 - INFO - Loading model, encoders, and feature columns...
+2024-12-26 05:34:46,638 - INFO - Model, encoders, and feature columns loaded successfully.
+2024-12-26 05:34:46,641 - INFO - New data loaded successfully. Shape: (26, 19)
+2024-12-26 05:34:46,641 - INFO - Starting data preprocessing...
+2024-12-26 05:34:46,641 - INFO - Encoding column: opponent
+2024-12-26 05:34:46,643 - INFO - Data preprocessing completed.
+2024-12-26 05:34:46,648 - INFO - Validating data for prediction...
+2024-12-26 05:34:46,654 - INFO - Predictions completed successfully.
+2024-12-26 05:34:46,657 - INFO - Predictions saved to ../data/predictions.csv
+2024-12-27 03:40:24,595 - INFO - Inference Script Started
+2024-12-27 03:40:24,596 - INFO - Loading model, encoders, and feature columns...
+2024-12-27 03:40:25,190 - INFO - Model, encoders, and feature columns loaded successfully.
+2024-12-27 03:40:25,193 - INFO - New data loaded successfully. Shape: (26, 19)
+2024-12-27 03:40:25,205 - INFO - Preview of new data:
+        date              opponent  sp   k   e   ta    pct  ast  sa  se  re  dig  bs  ba  be    tb  bhe  pts  year
+0  8/22/2024  vs Spring Arbor (MI)   4  47  13  136  0.250   43  10  13   3   66   3  14   1  10.0    0   67  2024
+1  8/22/2024  vs Indiana Northwest   5  51  27  189  0.127   47   7  21  10  106   3   8   2   7.0    0   65  2024
+2  8/23/2024          Indiana East   3  29  20  106  0.085   29   2   2   2   48   2   8   1   6.0    0   37  2024
+3  8/30/2024  vs Spring Arbor (MI)   4  44  27  168  0.101   42   5   3   5   73   1   4   0   3.0    0   52  2024
+4  8/31/2024        vs Bethel (IN)   5  57  32  154  0.162   54  10  13   5   50   0  18   0   9.0    0   76  2024
+2024-12-27 03:40:25,206 - INFO - Starting data preprocessing...
+2024-12-27 03:40:25,207 - INFO - Encoding column: opponent
+2024-12-27 03:40:25,209 - INFO - Dropping extra columns: ['date']
+2024-12-27 03:40:25,212 - INFO - Data preprocessing completed successfully.
+2024-12-27 03:40:25,213 - INFO - Feature alignment check passed.
+2024-12-27 03:40:25,213 - INFO - Validating data for prediction...
+2024-12-27 03:40:25,221 - INFO - Predictions completed successfully. Sample predictions: [1 0 0 0 0]
+2024-12-27 03:40:25,225 - INFO - Predictions saved to ../data/predictions.csv

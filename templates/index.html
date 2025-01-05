@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Data for Prediction</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Excel or CSV File for Prediction</h1>
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+        <label for="file">Choose Excel or CSV file:</label>
+        <input type="file" name="file" accept=".csv, .xls, .xlsx" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if prediction %}
+        <h2>Prediction Results:</h2>
+        <!-- Display the dataset with predictions -->
+        <table>
+            <thead>
+                <tr>
+                    {% for column in data[0].keys() %}
+                        <th>{{ column }}</th>
+                    {% endfor %}
+                    <th>win/loss</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data %}
+                    <tr>
+                        {% for value in row.values() %}
+                            <td>{{ value }}</td>
+                        {% endfor %}
+                        <td>{{ row['win/loss'] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h3>Download the result file:</h3>
+        <a href="{{ download_link }}" download>Click here to download the predictions</a>
+    {% endif %}
+</body>
+</html>

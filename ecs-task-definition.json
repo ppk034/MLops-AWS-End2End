@@ -1,0 +1,24 @@
+{
+    "family": "mlproject-end2end-task",
+    "networkMode": "awsvpc",
+    "executionRoleArn": "arn:aws:iam::651706748381:role/ecsTaskExecutionRole",
+    "containerDefinitions": [
+        {
+            "name": "mlproject-container",
+            "image": "651706748381.dkr.ecr.us-east-1.amazonaws.com/mlproject-end2end:latest",
+            "memory": 512,
+            "cpu": 256,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 5000,
+                    "hostPort": 5000,
+                    "protocol": "tcp"
+                }
+            ]
+        }
+    ],
+    "requiresCompatibilities": ["FARGATE"],
+    "cpu": "256",
+    "memory": "512"
+}

@@ -1,0 +1,104 @@
+2024-12-26 03:21:55,342 - INFO - Data loaded successfully. Shape: (96, 20)
+2024-12-26 03:21:55,343 - INFO - Replaced W/L column with binary values.
+2024-12-26 03:21:55,344 - INFO - Dropped unnecessary columns.
+2024-12-26 03:21:55,344 - ERROR - Error during training: Input y contains NaN.
+2024-12-26 03:21:55,344 - ERROR - Error in training pipeline: Input y contains NaN.
+2024-12-26 03:22:51,431 - INFO - Data loaded successfully. Shape: (96, 20)
+2024-12-26 03:22:51,431 - INFO - Replaced W/L column with binary values.
+2024-12-26 03:22:51,432 - INFO - Dropped unnecessary columns.
+2024-12-26 03:22:51,433 - ERROR - Error during training: Input y contains NaN.
+2024-12-26 03:22:51,433 - ERROR - Error in training pipeline: Input y contains NaN.
+2024-12-26 03:28:28,103 - INFO - Data loaded successfully. Shape: (96, 20)
+2024-12-26 03:28:28,103 - INFO - Replaced W/L column with binary values.
+2024-12-26 03:28:28,103 - INFO - Dropped unnecessary columns.
+2024-12-26 03:28:28,103 - ERROR - Error during training: Input y contains NaN.
+2024-12-26 03:28:28,103 - ERROR - Error in training pipeline: Input y contains NaN.
+2024-12-26 03:29:34,791 - INFO - Data loaded successfully. Shape: (96, 20)
+2024-12-26 03:29:34,791 - INFO - Replaced W/L column with binary values.
+2024-12-26 03:29:34,791 - INFO - Dropped unnecessary columns.
+2024-12-26 03:29:34,791 - ERROR - Error during training: Input y contains NaN.
+2024-12-26 03:29:34,791 - ERROR - Error in training pipeline: Input y contains NaN.
+2024-12-26 03:31:21,669 - INFO - Train Model Script Started
+2024-12-26 03:31:21,669 - INFO - Loading data from ../data/project_data_cleaned.csv
+2024-12-26 03:31:21,669 - INFO - Data loaded successfully. Shape: (96, 20)
+2024-12-26 03:31:21,669 - INFO - Starting data preprocessing
+2024-12-26 03:31:21,669 - INFO - Data preprocessing completed
+2024-12-26 03:31:21,669 - INFO - Starting model training and optimization
+2024-12-26 03:31:21,669 - INFO - Training set: (76, 17), Testing set: (20, 17)
+2024-12-26 03:31:30,641 - INFO - Best parameters: {'max_depth': 5, 'min_samples_leaf': 4, 'min_samples_split': 2, 'n_estimators': 200}
+2024-12-26 03:31:30,657 - INFO - Model Evaluation:
+Accuracy: 0.8000
+Precision: 0.7692
+Recall: 0.9091
+ROC-AUC: 0.7879
+2024-12-26 03:31:30,657 - INFO - 
+              precision    recall  f1-score   support
+
+           0       0.86      0.67      0.75         9
+           1       0.77      0.91      0.83        11
+
+    accuracy                           0.80        20
+   macro avg       0.81      0.79      0.79        20
+weighted avg       0.81      0.80      0.80        20
+
+2024-12-26 03:31:30,710 - INFO - Trained model saved at ../models/trained_model.pkl
+2024-12-26 03:31:30,710 - INFO - Train Model Script Completed Successfully
+2024-12-26 03:50:39,775 - INFO - Train Model Script Started
+2024-12-26 03:50:39,775 - INFO - Loading data from ../data/project_data_cleaned.csv
+2024-12-26 03:50:39,790 - INFO - Data loaded successfully. Shape: (96, 20)
+2024-12-26 03:50:39,790 - INFO - Starting data preprocessing
+2024-12-26 03:50:39,790 - INFO - Dropping 'date' column
+2024-12-26 03:50:39,790 - INFO - Encoding column: opponent
+2024-12-26 03:50:39,790 - INFO - Data preprocessing completed
+2024-12-26 03:50:39,790 - INFO - Encoders saved at ../models/encoders.pkl
+2024-12-26 03:50:39,790 - INFO - Starting model training and optimization
+2024-12-26 03:50:39,790 - INFO - Training set: (76, 18), Testing set: (20, 18)
+2024-12-26 03:50:39,790 - INFO - Performing grid search for hyperparameter optimization
+2024-12-26 03:50:48,868 - INFO - Best parameters: {'max_depth': 5, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
+2024-12-26 03:50:48,884 - INFO - Model Evaluation:
+Accuracy: 0.8000
+Precision: 0.7692
+Recall: 0.9091
+ROC-AUC: 0.7879
+2024-12-26 03:50:48,884 - INFO - 
+              precision    recall  f1-score   support
+
+           0       0.86      0.67      0.75         9
+           1       0.77      0.91      0.83        11
+
+    accuracy                           0.80        20
+   macro avg       0.81      0.79      0.79        20
+weighted avg       0.81      0.80      0.80        20
+
+2024-12-26 03:50:48,931 - INFO - Trained model saved at ../models/trained_model.pkl
+2024-12-26 03:50:48,931 - INFO - Train Model Script Completed Successfully
+2024-12-26 04:02:19,618 - INFO - Train Model Script Started
+2024-12-26 04:02:19,618 - INFO - Loading data from ../data/project_data_cleaned.csv
+2024-12-26 04:02:19,618 - INFO - Data loaded successfully. Shape: (96, 20)
+2024-12-26 04:02:19,618 - INFO - Starting data preprocessing
+2024-12-26 04:02:19,618 - INFO - Dropping 'date' column
+2024-12-26 04:02:19,618 - INFO - Encoding column: opponent
+2024-12-26 04:02:19,618 - INFO - Feature columns saved at ../models/feature_columns.pkl
+2024-12-26 04:02:19,618 - INFO - Data preprocessing completed
+2024-12-26 04:02:19,618 - INFO - Encoders saved at ../models/encoders.pkl
+2024-12-26 04:02:19,618 - INFO - Starting model training and optimization
+2024-12-26 04:02:19,618 - INFO - Training set: (76, 18), Testing set: (20, 18)
+2024-12-26 04:02:19,618 - INFO - Performing grid search for hyperparameter optimization
+2024-12-26 04:02:28,542 - INFO - Best parameters: {'max_depth': 5, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
+2024-12-26 04:02:28,557 - INFO - Model Evaluation:
+Accuracy: 0.8000
+Precision: 0.7692
+Recall: 0.9091
+ROC-AUC: 0.7879
+2024-12-26 04:02:28,557 - INFO - 
+              precision    recall  f1-score   support
+
+           0       0.86      0.67      0.75         9
+           1       0.77      0.91      0.83        11
+
+    accuracy                           0.80        20
+   macro avg       0.81      0.79      0.79        20
+weighted avg       0.81      0.80      0.80        20
+
+2024-12-26 04:02:28,604 - INFO - Trained model saved at ../models/trained_model.pkl
+2024-12-26 04:02:28,604 - INFO - Train Model Script Completed Successfully

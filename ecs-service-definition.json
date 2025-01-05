@@ -1,0 +1,14 @@
+{
+    "serviceName": "mlproject-end2end-service",
+    "cluster": "mlproject-end2end-cluster",
+    "desiredCount": 1,
+    "launchType": "FARGATE",
+    "taskDefinition": "mlproject-end2end-task",
+    "networkConfiguration": {
+        "awsvpcConfiguration": {
+            "subnets": ["subnet-07f6eb28bef72e82b"],
+            "securityGroups": ["sg-0f9978cde3d722df9"],
+            "assignPublicIp": "ENABLED"
+        }
+    }
+}

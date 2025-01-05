@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-ml-app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-ml-app
+  template:
+    metadata:
+      labels:
+        app: flask-ml-app
+    spec:
+      containers:
+      - name: flask-ml-app
+        image: praveenk205/flask-ml-app:v2
+        ports:
+        - containerPort: 5000
+      imagePullSecrets:
+      - name: regcred
